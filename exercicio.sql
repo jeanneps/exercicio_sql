@@ -44,10 +44,8 @@ INSERT INTO livros (titulo, descricao, ano_de_lancamento) VALUES ('A Cabana: Um 
 
 --4. Listagem
 --a. Liste somente os títulos e ano de lançamento
-SELECT titulo, ano_de_lancamento FROM livros;
-
 --i. títulos em ordem alfabética;
-SELECT * FROM LIVROS ORDER BY titulo;
+SELECT * FROM LIVROS ORDER BY titulo ASC;
 
 --ii. Caso tenha títulos iguais, use o ano (do mais recente para o
 --mais antigo) para desempatar
@@ -67,4 +65,4 @@ UPDATE livros set ano_de_lancamento = '2023' WHERE titulo LIKE '%c%';
 DELETE FROM livros WHERE titulo LIKE 'a%';
 
 --7. Derrube toda a estrutura
-DROP DATABASE livros; 
+DROP DATABASE Biblioteca; 
